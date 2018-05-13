@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title>utf-8 page title: ひらがなひらがな</title>
+</head>
+<body>
+
+<p><button onclick="on_open()">Open</button> a new browser window.</p>
+
+<p><button onclick="on_select()">Select</button> a file.</p>
+
+<p><button onclick="on_log()">Log</button> to console.</p>
+
+<script>
+function on_open() {
+    window.open("http://github.com/mat007/saddle");
+}
+
+function on_select() {
+    var input = document.createElement('input');
+    input.type = 'file';
+    input.click();
+}
+
+function on_log() {
+    console.log("log utf-8 to console: ひらがなひらがな");
+}
+</script>
+
+</body>
+</html>
